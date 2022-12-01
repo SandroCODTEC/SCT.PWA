@@ -23,7 +23,7 @@ jobs:
         run: npm run build:prod
         
       - name: Deploy to GitHub Pages
-        uses: SandroCODTEC/SCT.PWA@v3
+        uses: SandroCODTEC/SCT.PWA@v1
         with:
           target_branch: gh-pages
           build_dir: dist/sct-app
