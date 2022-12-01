@@ -7,8 +7,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    
     "build-themes": "devextreme build",
-    "postinstall": "npm run build-themes"
+    "postinstall": "npm run build-themes",
+
+    "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage",
+    "build:prod": "ng build --deploy-url /sct-app/",
   },
   "private": true,
   "dependencies": {
